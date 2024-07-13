@@ -11,7 +11,7 @@ import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import {deliveryOptions, getDeliveryOption, calculateDeliveryDate} from '../../data/deliveryOptions.js';
 import {renderPaymentSummary} from './paymentSummary.js';
 import { updateCartQuantity } from "../checkout.js";
-import { renderCheckoutHeader } from './checkoutheader.js';
+import { renderCheckoutHeader } from './checkoutHeader.js';
 export function renderOrderSummary() {
   let cartSummaryHTML = '';
 

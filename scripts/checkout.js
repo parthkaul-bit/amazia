@@ -1,6 +1,6 @@
 import {renderOrderSummary} from './checkout/orderSummary.js';
 import {renderPaymentSummary} from './checkout/paymentSummary.js';
-import {renderCheckoutHeader} from './checkout/checkoutheader.js';
+import {renderCheckoutHeader} from './checkout/checkoutHeader.js';
 import {cart, addToCart} from '../data/cart.js';
 import { calculateCartQuantity } from '../data/cart.js';
 import {loadCart, loadCartFetch} from '../data/cart.js';
@@ -34,8 +34,8 @@ async function loadPage() {
     } catch (error) {
       console.log('Unexpected error. Please try again later.');
     }
+    renderCheckoutHeader();
     renderOrderSummary();
     renderPaymentSummary();
   }
   await loadPage();
-    renderCheckoutHeader();
